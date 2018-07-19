@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_information"
+            android:title="@string/the_hypori_client" />
+        <item
+            android:id="@+id/nav_solution"
+            android:icon="@drawable/ic_solution"
+            android:title="@string/the_hypori_solution" />
+        <item
+            android:id="@+id/nav_benefits"
+            android:icon="@drawable/ic_check"
+            android:title="@string/key_benefits" />
+        <item
+            android:id="@+id/nav_enterprise"
+            android:icon="@drawable/ic_enterprise"
+            android:title="@string/enterprise_class_solution" />
+        <item
+            android:id="@+id/nav_experience"
+            android:icon="@drawable/ic_system_requirements"
+            android:title="@string/native_mobile_experience" />
+        <item
+            android:id="@+id/nav_system_requirements"
+            android:icon="@drawable/ic_system"
+            android:title="@string/system_requirements" />
+        <item
+            android:id="@+id/nav_iw"
+            android:icon="@drawable/ic_iwstar_100"
+            android:title="@string/intelligent_waves_llc" />
+    </group>
+
+
+</menu>

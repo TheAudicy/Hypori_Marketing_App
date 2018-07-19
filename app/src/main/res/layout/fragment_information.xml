@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:id="@+id/hypori_client_image_header"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:contentDescription="@string/phone_w_hypori"
+        android:background="@android:color/white"
+        app:srcCompat="@drawable/hypori_logo" />
+
+    <ScrollView
+        android:id="@+id/information_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hypori_client_image_header">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hypori_iw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Hypori by Intelligent Waves represents a new and comprehensive approach to Enterprise Mobility Management and Mobile Device Management. Hypori virtualizes the entire mobile experience – moving everything that matters into a managed and secure environment."
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/info_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/zero_footprint_agentless_app_for_ios_and_android"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/info_tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/supports_pki_credential_based_multi_factor_authentication"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/info_tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/leverages_fips_140_2_crypto_and_tls_1_2_encryption"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/info_tv_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/common_criteria_certified"
+                android:textColor="@android:color/black"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/hypori_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/phone_w_hypori"
+                app:srcCompat="@drawable/hypori" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
