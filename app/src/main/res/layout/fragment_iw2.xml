@@ -7,8 +7,9 @@
 
     <ImageView
         android:id="@+id/iw_logo_black_w_waves_iv"
-        android:layout_width="match_parent"
-        android:layout_height="101dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
         android:contentDescription="int_waves_logo_w_waves_black"
         app:srcCompat="@drawable/iw_logo_black_with_waves" />
 
@@ -33,10 +34,49 @@
                 android:textColor="@android:color/black"
                 android:textSize="30sp" />
 
+            <ImageView
+                android:id="@+id/sdvosb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/sdvosb" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/iw_mission_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Our Mission"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Since 2006, Intelligent Waves LLC has been providing information technology (IT) and communications support to a wide variety of U.S. government customers. Our boots on the ground experience—along with our technical expertise—enables us to identify, document, and develop mission-critical IT and communications solutions."
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/iw_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/ic_iwstar_100" />
+
 
         </LinearLayout>
 
     </ScrollView>
-
 
 </RelativeLayout>

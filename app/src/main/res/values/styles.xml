@@ -13,8 +13,8 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="MyActionBarTabText"
-        parent="@style/Widget.AppCompat.ActionBar.TabText">
+    <style name="MyActionBarTextColor"
+        parent="@android:style/TextAppearance">
         <item name="android:textColor">#c0c0c0</item>
     </style>
 </resources>

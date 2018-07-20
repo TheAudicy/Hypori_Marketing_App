@@ -18,9 +18,13 @@
             <ImageView
                 android:id="@+id/hypori_client_image_header"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:contentDescription="@string/phone_w_hypori"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
                 android:background="@android:color/white"
+                android:contentDescription="@string/phone_w_hypori"
                 app:srcCompat="@drawable/hypori_logo" />
 
             <TextView
@@ -30,75 +34,84 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:text="Hypori by Intelligent Waves represents a new and comprehensive approach to Enterprise Mobility Management and Mobile Device Management. Hypori virtualizes the entire mobile experience – moving everything that matters into a managed and secure environment."
-                android:textColor="@android:color/black"
                 android:textAlignment="center"
-                android:textSize="40sp" />
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/info_tv1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/zero_footprint_agentless_app_for_ios_and_android"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/info_tv_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
                 android:text="@string/supports_pki_credential_based_multi_factor_authentication"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/info_tv_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/leverages_fips_140_2_crypto_and_tls_1_2_encryption"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/info_tv_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/common_criteria_certified"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/hypori_phone"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="300dp"
+                android:adjustViewBounds="true"
                 android:contentDescription="@string/phone_w_hypori"
-                app:srcCompat="@drawable/hypori" />
+                app:srcCompat="@drawable/hypori_phone_tilted" />
 
             <TextView
                 android:id="@+id/hypori_trial_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Want to try Hypori for free for 30 days? Press the button below!"
-                android:textColor="@android:color/black"
                 android:textAlignment="center"
+                android:textColor="@android:color/black"
                 android:textSize="35sp" />
 
             <Button
                 android:id="@+id/trial_button"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:background="#FFB41518"
                 android:autoLink="web"
+                android:background="#FFB41518"
                 android:clickable="true"
                 android:focusable="true"
                 android:linksClickable="true"
@@ -112,8 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="With this trial, you can expect..."
-                android:textColor="@android:color/black"
                 android:textAlignment="center"
+                android:textColor="@android:color/black"
                 android:textSize="35sp" />
 
         </LinearLayout>

@@ -17,7 +17,7 @@
         android:text="@string/key_benefits"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="45sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -46,6 +46,8 @@
                 android:id="@+id/device_neutral_description_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/virtual_mobile_devices_are_accessible_from_any_android_or_ios_device"
                 android:textColor="@android:color/black"
                 android:textSize="35sp" />
@@ -54,9 +56,9 @@
                 android:id="@+id/device_neutral_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="15dp"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
                 android:contentDescription="@string/hand_w_phone"
                 app:srcCompat="@drawable/device_neutral" />
 
@@ -73,6 +75,8 @@
                 android:id="@+id/secure_platform_description_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/ensure_compliance_by_keeping_apps_and_data_secure_in_the_data_center"
                 android:textColor="@android:color/black"
                 android:textSize="35sp" />
@@ -92,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/agentless"
-                android:textColor="@android:color/darker_gray"
+                android:textColor="#767782"
                 android:textSize="40sp"
                 android:textStyle="italic" />
 
@@ -100,6 +104,8 @@
                 android:id="@+id/agentless_description_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:text="@string/enjoy_user_adoption_by_eliminating_the_need_for_intrusive_agents_and_big_brother_policies"
                 android:textColor="@android:color/black"
                 android:textSize="35sp" />

@@ -16,7 +16,7 @@
         android:text="@string/enterprise_class_solution"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="45sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -34,61 +34,73 @@
                 android:id="@+id/enterprise_tv1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/enterprise_identity_support_with_ad_ldap_integration"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/delegated_admin_privileges_for_flexible_platform_management"
                 android:textColor="@android:color/black"
-                android:textSize="40sp"/>
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/supports_enterprise_class_storage_integration_including_nas_and_san_storage"
                 android:textColor="@android:color/black"
-                android:textSize="40sp"/>
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/single_virtual_os_to_develop_test_and_support"
                 android:textColor="@android:color/black"
-                android:textSize="40sp"/>
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/centralized_control_and_management_of_the_mobile_experience"
                 android:textColor="@android:color/black"
-                android:textSize="40sp"/>
+                android:textSize="35sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/supports_third_party_monitoring_and_management_tools"
                 android:textColor="@android:color/black"
-                android:textSize="40sp"/>
+                android:textSize="35sp" />
 
         </LinearLayout>
 
