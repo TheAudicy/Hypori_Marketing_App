@@ -13,7 +13,7 @@
         android:text="@string/native_mobile"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -28,6 +28,17 @@
             android:orientation="vertical">
 
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="• Hypori enables secure, managed access to controlled enterprise resources via BYOD or uncontrolled commercial devices."
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
                 android:id="@+id/experience_tv1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,7 +49,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/performance_optimized_remote_mobile_experience"
                 android:textColor="@android:color/black"
-                android:textSize="35sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/experience_tv2"
@@ -51,7 +62,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/dynamic_h_264_encoding_and_audio_video_optimizations_for_improved_multimedia_experience"
                 android:textColor="@android:color/black"
-                android:textSize="35sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/experience_tv3"
@@ -64,7 +75,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/rich_sensor_integration_including_screen_orientation_gps_bluetooth_and_more"
                 android:textColor="@android:color/black"
-                android:textSize="35sp" />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/native_mobile_iv1"

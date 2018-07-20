@@ -14,7 +14,7 @@
         android:text="@string/system_requirements"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -37,7 +37,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/available_as_both_an_on_premise_and_hosted_solution"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/system_requirements_tv2"
@@ -49,7 +49,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/compute_memory_and_storage_for_on_premise_solutions_vary_based_on_the_specific_needs_of_each_organization"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/system_requirements_tv3"
@@ -61,7 +61,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/contact_hypori_to_estimate_on_premise_requirements_and_costs"
                 android:textColor="@android:color/black"
-                android:textSize="40sp" />
+                android:textSize="30sp" />
 
         </LinearLayout>
 

@@ -17,7 +17,7 @@
         android:text="@string/key_benefits"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/device_neutral"
                 android:textColor="#767782"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_marginStart="5dp"
                 android:text="@string/virtual_mobile_devices_are_accessible_from_any_android_or_ios_device"
                 android:textColor="@android:color/black"
-                android:textSize="35sp" />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/device_neutral_image"
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/secure_platform"
                 android:textColor="#767782"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -79,7 +79,7 @@
                 android:layout_marginStart="5dp"
                 android:text="@string/ensure_compliance_by_keeping_apps_and_data_secure_in_the_data_center"
                 android:textColor="@android:color/black"
-                android:textSize="35sp" />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/secure_platform_image"
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/agentless"
                 android:textColor="#767782"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -108,7 +108,7 @@
                 android:layout_marginStart="5dp"
                 android:text="@string/enjoy_user_adoption_by_eliminating_the_need_for_intrusive_agents_and_big_brother_policies"
                 android:textColor="@android:color/black"
-                android:textSize="35sp" />
+                android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/agentless_image"

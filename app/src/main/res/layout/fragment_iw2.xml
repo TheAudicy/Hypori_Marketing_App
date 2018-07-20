@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
-                android:text="Intelligent Waves LLC is a service-disabled, Veteran Owned Small business that specializes in providing information technology (IT) and communications support to a wide variety of U.S. government customers. We provide cutting edge IT Networking and Services design, execution, and sustainment. Our skilled professionals are ready to take your organization and mission to the next level."
+                android:text="Intelligent Waves LLC is a service-disabled, Veteran Owned Small business that specializes in providing information technology (IT) and communications support to a wide variety of U.S. government customers. We provide cutting edge IT Networking and Services design, execution, and sustainment."
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="30sp" />
