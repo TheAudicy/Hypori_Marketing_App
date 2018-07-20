@@ -1,5 +1,7 @@
 package com.example.matthewbuchananma.hypori_marketing_app;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,9 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout drawer;
@@ -19,9 +19,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(this).build();
-        ImageLoader.getInstance().init(config);
 
         setContentView(R.layout.activity_main);
 
@@ -42,6 +39,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     new InformationFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_information);
         }
+    }
+
+    public void hyporiTrial(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://selfregister.hypori.com/"));
+        startActivity(browserIntent);
     }
 
     @Override

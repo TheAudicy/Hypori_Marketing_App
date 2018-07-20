@@ -2,27 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/background_light">
-
-    <ImageView
-        android:id="@+id/hypori_client_image_header"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:contentDescription="@string/phone_w_hypori"
-        android:background="@android:color/white"
-        app:srcCompat="@drawable/hypori_logo" />
+    android:layout_height="match_parent">
 
     <ScrollView
         android:id="@+id/information_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/hypori_client_image_header">
+        android:background="@android:color/background_light">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/hypori_client_image_header"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:contentDescription="@string/phone_w_hypori"
+                android:background="@android:color/white"
+                app:srcCompat="@drawable/hypori_logo" />
 
             <TextView
                 android:id="@+id/hypori_iw"
@@ -81,6 +80,41 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/phone_w_hypori"
                 app:srcCompat="@drawable/hypori" />
+
+            <TextView
+                android:id="@+id/hypori_trial_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Want to try Hypori for free for 30 days? Press the button below!"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/trial_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFB41518"
+                android:autoLink="web"
+                android:clickable="true"
+                android:focusable="true"
+                android:linksClickable="true"
+                android:onClick="hyporiTrial"
+                android:text="30 Day Free Trial"
+                android:textAllCaps="false"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/hypori_trial_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With this trial, you can expect..."
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textSize="35sp" />
 
         </LinearLayout>
 
