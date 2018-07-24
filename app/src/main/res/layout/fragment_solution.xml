@@ -17,7 +17,7 @@
         android:text="@string/the_hypori_solution"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -32,16 +32,27 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/vmi_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/vmi_info"
+                    android:textAlignment="center"
+                    android:textColor="#606060"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/virtualMobileInfrastructure"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/vmi_info"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
                     android:text="@string/virtual_mobile_infrastructure"
                     android:textColor="#767782"
                     android:textSize="30sp"
@@ -52,24 +63,126 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/virtualMobileInfrastructure"
-                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginBottom="15dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="@string/hypori_solution_image"
                     app:srcCompat="@drawable/hypori_solution__vertical_edited" />
 
-            </RelativeLayout>
+                <TextView
+                    android:id="@+id/solution_tv_vmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hypori_solution_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/components_of_the_vmi_platform"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/vmi_info"
-                android:textAlignment="center"
-                android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                <ImageView
+                    android:id="@+id/hypori_client_vmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/solution_tv_vmi"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/hypori_client"
+                    app:srcCompat="@drawable/hypori_client" />
+
+                <TextView
+                    android:id="@+id/hypori_client_vmi_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/hypori_client_vmi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/hypori_client_vmi"
+                    android:layout_toRightOf="@+id/hypori_client_vmi"
+                    android:text="@string/hypori_client"
+                    android:textColor="@android:color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hypori_client_vmi_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/hypori_client_vmi_tv1"
+                    android:layout_alignStart="@+id/hypori_client_vmi_tv1"
+                    android:layout_below="@+id/hypori_client_vmi_tv1"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/the_hypori_client_is_a_mobile_thin_client_app_developed_and_available_on_both_android_and_ios_platforms_that_provides_access_to_the_hypori_device"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/hypori_vmd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hypori_client_vmi_tv2"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/hypori_virtual_mobile_device"
+                    app:srcCompat="@drawable/hypori_vmi_device" />
+
+                <TextView
+                    android:id="@+id/hypori_vmd_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/hypori_client_vmi_tv1"
+                    android:layout_alignStart="@+id/hypori_client_vmi_tv1"
+                    android:layout_alignTop="@+id/hypori_vmd"
+                    android:text="@string/hypori_virtual_mobile_device"
+                    android:textColor="@android:color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hypori_vmd_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/hypori_client_vmi_tv1"
+                    android:layout_alignStart="@+id/hypori_client_vmi_tv1"
+                    android:layout_below="@+id/hypori_vmd_tv1"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/the_hypori_virtual_mobile_device_is_a_virtual_mobile_platform_that_runs_on_a_server_it_functions_just_like_a_physical_smartphone_or_tablet_except_the_operating_system_data_and_apps_reside_and_run_on_a_server_instead_of_a_physical_device"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/hypori_admin_console_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/hypori_vmd_tv2"
+                    android:layout_marginTop="30dp"
+                    android:contentDescription="@string/hypori_admin_console"
+                    app:srcCompat="@drawable/hypori_admin_console" />
+
+                <TextView
+                    android:id="@+id/hypori_admin_console_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/hypori_client_vmi_tv1"
+                    android:layout_alignStart="@+id/hypori_client_vmi_tv1"
+                    android:layout_alignTop="@+id/hypori_admin_console_iv"
+                    android:text="@string/hypori_admin_console"
+                    android:textColor="@android:color/black"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hypori_admin_console_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/hypori_client_vmi_tv1"
+                    android:layout_alignStart="@+id/hypori_client_vmi_tv1"
+                    android:layout_below="@+id/hypori_admin_console_tv1"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/the_hypori_admin_console_is_a_web_application_that_can_be_used_to_monitor_and_configure_the_hypori_platform_including_hypori_servers_virtual_devices_and_users"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 

@@ -17,7 +17,7 @@
         android:text="@string/key_benefits"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -50,7 +50,7 @@
                 android:layout_marginStart="5dp"
                 android:text="@string/virtual_mobile_devices_are_accessible_from_any_android_or_ios_device"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/device_neutral_image"
@@ -72,14 +72,47 @@
                 android:textStyle="italic" />
 
             <TextView
+                android:id="@+id/only_solution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/hypori_is_the_only_nsa_csfc_approved_virtual_smartphone_solution"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
                 android:id="@+id/secure_platform_description_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/ensure_compliance_by_keeping_apps_and_data_secure_in_the_data_center"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/supports_pki_credential_based_multi_factor_authentication"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/leverages_fips_140_2_crypto_and_tls_1_2_encryption"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/secure_platform_image"
@@ -108,7 +141,18 @@
                 android:layout_marginStart="5dp"
                 android:text="@string/enjoy_user_adoption_by_eliminating_the_need_for_intrusive_agents_and_big_brother_policies"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/zero_footprint_agentless_app_for_ios_and_android"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/agentless_image"

@@ -17,7 +17,7 @@
         android:text="@string/enterprise_class_solution"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -36,27 +36,67 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Enterprise Level of Concern with Potential Mobile Security Issues"
+                android:text="@string/enterprise_level_of_concern_with_potential_mobile_security_issues"
                 android:textColor="@android:color/black"
-                android:textSize="30sp"/>
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/enterprise_stats_tv2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="IDG Research"
+                android:layout_marginTop="5dp"
+                android:text="@string/idg_research"
                 android:textColor="#767782"
-                android:textSize="30sp"
+                android:textSize="25sp"
                 android:textStyle="italic" />
 
             <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="500dp"
+                android:id="@+id/enterprise_stats"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:contentDescription="@string/enterprise_stats"
                 app:srcCompat="@drawable/enterprise_stats" />
+
+            <TextView
+                android:id="@+id/enterprise_intro_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/enterprises_are_challenged_with_protecting_data_applications_and_users_and_securing_the_end_point_has_become_a_never_ending_arms_race_inability_to_win_this_battle_is_preventing_the_full_realization_of_the_benefits_of_mobility"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/enterprise_stats_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/enterprise_stats"
+                app:srcCompat="@drawable/enterprise_stats_2" />
+
+            <TextView
+                android:id="@+id/enterprise_intro_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/hypori_moves_this_battlefield_from_the_unsecure_difficult_to_control_end_point_to_the_secure_and_managed_cloud"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#b41518"
+                android:fadingEdge="horizontal"
+                android:fadingEdgeLength="2dp"
+                android:requiresFadingEdge="horizontal" />
 
             <TextView
                 android:id="@+id/enterprise_tv1"
@@ -68,7 +108,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/enterprise_identity_support_with_ad_ldap_integration"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv2"
@@ -80,7 +120,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/delegated_admin_privileges_for_flexible_platform_management"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv3"
@@ -92,7 +132,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/supports_enterprise_class_storage_integration_including_nas_and_san_storage"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv4"
@@ -104,7 +144,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/single_virtual_os_to_develop_test_and_support"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv5"
@@ -116,7 +156,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/centralized_control_and_management_of_the_mobile_experience"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/enterprise_tv6"
@@ -128,7 +168,7 @@
                 android:layout_marginTop="10dp"
                 android:text="@string/supports_third_party_monitoring_and_management_tools"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
         </LinearLayout>
 

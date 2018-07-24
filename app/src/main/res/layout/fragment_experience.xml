@@ -13,7 +13,7 @@
         android:text="@string/native_mobile"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <ScrollView
@@ -28,52 +28,12 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:text="• Hypori enables secure, managed access to controlled enterprise resources via BYOD or uncontrolled commercial devices."
-                android:textColor="@android:color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/experience_tv1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/native_mobile_header"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/performance_optimized_remote_mobile_experience"
-                android:textColor="@android:color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/experience_tv2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/experience_tv1"
                 android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/dynamic_h_264_encoding_and_audio_video_optimizations_for_improved_multimedia_experience"
-                android:textColor="@android:color/black"
-                android:textSize="30sp" />
-
-            <TextView
-                android:id="@+id/experience_tv3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/experience_tv2"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/rich_sensor_integration_including_screen_orientation_gps_bluetooth_and_more"
+                android:text="@string/hypori_enables_secure_managed_access_to_controlled_enterprise_resources_via_byod_or_uncontrolled_commercial_devices_no_dot"
+                android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="30sp" />
 
@@ -82,7 +42,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:contentDescription="@string/hypori_phone"
                 app:srcCompat="@drawable/hypori" />
+
+            <TextView
+                android:id="@+id/experience_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/performance_optimized_remote_mobile_experience"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/experience_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/dynamic_h_264_encoding_and_audio_video_optimizations_for_improved_multimedia_experience"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/experience_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/rich_sensor_integration_including_screen_orientation_gps_bluetooth_and_more"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
 
         </LinearLayout>
 

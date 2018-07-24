@@ -8,6 +8,9 @@
         android:id="@+id/information_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:background="@android:color/background_light">
 
         <LinearLayout
@@ -33,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Hypori by Intelligent Waves represents a new and comprehensive approach to Enterprise Mobility Management and Mobile Device Management. Hypori virtualizes the entire mobile experience – moving everything that matters into a managed and secure environment."
+                android:text="@string/hypori_by_intelligent_waves_represents_a_new_and_comprehensive_approach_to_enterprise_mobility_management_and_mobile_device_management_hypori_virtualizes_the_entire_mobile_experience_moving_everything_that_matters_into_a_managed_and_secure_environment"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="25sp" />
@@ -42,14 +45,15 @@
                 android:id="@+id/hypori_phone"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:adjustViewBounds="true"
                 android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
                 android:contentDescription="@string/phone_w_hypori"
                 app:srcCompat="@drawable/hypori_phone_tilted" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
@@ -58,61 +62,97 @@
                 android:fadingEdgeLength="2dp"
                 android:requiresFadingEdge="horizontal" />
 
-            <TextView
-                android:id="@+id/info_tv_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:text="• Hypori is the only NSA CSfC approved virtual smartphone solution."
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/info_tv1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/zero_footprint_agentless_app_for_ios_and_android"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
+                <ImageView
+                    android:id="@+id/lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="2dp"
+                    android:contentDescription="@string/lock"
+                    app:srcCompat="@drawable/ic_lock" />
 
-            <TextView
-                android:id="@+id/info_tv_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/supports_pki_credential_based_multi_factor_authentication"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/info_tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/lock"
+                    android:layout_toRightOf="@id/lock"
+                    android:text="@string/hypori_mitigates_the_risk_of_data_at_rest_from_both_mobile_android_and_ios_platforms"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/info_tv_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/leverages_fips_140_2_crypto_and_tls_1_2_encryption"
-                android:textColor="@android:color/black"
-                android:textSize="25sp" />
+                <ImageView
+                    android:id="@+id/gear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/info_tv_4"
+                    android:layout_marginTop="2dp"
+                    android:contentDescription="@string/gear"
+                    app:srcCompat="@drawable/ic_system" />
+
+                <TextView
+                    android:id="@+id/managed_and_controlled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/info_tv_4"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/lock"
+                    android:layout_toRightOf="@id/gear"
+                    android:text="@string/hypori_enables_secure_managed_access_to_controlled_enterprise_resources_via_byod_or_uncontrolled_commercial_devices_no_dot"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/managed_and_controlled"
+                    android:layout_marginTop="2dp"
+                    android:contentDescription="@string/star"
+                    app:srcCompat="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/managed_and_controlled"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_toEndOf="@+id/lock"
+                    android:layout_toRightOf="@+id/lock"
+                    android:text="@string/hypori_is_already_being_adopted_by_customers_such_as_the_department_of_homeland_security_and_the_u_s_special_operations_command"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:background="#b41518"
                 android:fadingEdge="horizontal"
                 android:fadingEdgeLength="2dp"
@@ -122,27 +162,89 @@
                 android:id="@+id/hypori_trial_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Want to try Hypori for free for 30 days? Press the button below!"
+                android:layout_marginBottom="10dp"
+                android:text="@string/want_to_try_hypori_for_free_for_30_days_press_the_button_with_your_corresponding_operating_system_below"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="25sp" />
 
-            <Button
-                android:id="@+id/trial_button"
-                android:layout_width="250dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:autoLink="web"
-                android:background="#FFB41518"
-                android:clickable="true"
-                android:focusable="true"
-                android:linksClickable="true"
-                android:onClick="hyporiTrial"
-                android:text="30 Day Free Trial"
-                android:textAllCaps="false"
-                android:textSize="30sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/anchor"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/apple_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toLeftOf="@+id/anchor"
+                    android:layout_toStartOf="@+id/anchor"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/apple_logo"
+                    app:srcCompat="@drawable/apple_logo" />
+
+                <ImageView
+                    android:id="@+id/android_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/anchor"
+                    android:layout_toRightOf="@id/anchor"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/android_logo"
+                    app:srcCompat="@drawable/android_logo" />
+
+                <Button
+                    android:id="@+id/trial_button_apple"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/apple_logo"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toLeftOf="@+id/anchor"
+                    android:layout_toStartOf="@+id/anchor"
+                    android:autoLink="web"
+                    android:background="#FFB41518"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:linksClickable="true"
+                    android:onClick="hyporiTrialApple"
+                    android:text="@string/apple_ios"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/trial_button_android"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/android_logo"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/anchor"
+                    android:layout_toRightOf="@+id/anchor"
+                    android:autoLink="web"
+                    android:background="#FFB41518"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:linksClickable="true"
+                    android:onClick="hyporiTrialAndroid"
+                    android:text="@string/android"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 

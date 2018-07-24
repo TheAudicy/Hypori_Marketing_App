@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:contentDescription="int_waves_logo_w_waves_black"
+        android:contentDescription="@string/int_waves_logo_w_waves_black"
         app:srcCompat="@drawable/iw_logo_black_with_waves" />
 
     <ScrollView
@@ -29,10 +29,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="5dp"
-                android:text="Intelligent Waves LLC is a service-disabled, Veteran Owned Small business that specializes in providing information technology (IT) and communications support to a wide variety of U.S. government customers. We provide cutting edge IT Networking and Services design, execution, and sustainment."
+                android:text="@string/intelligent_waves_llc_is_a_service_disabled_veteran_owned_small_business_that_specializes_in_providing_information_technology_it_and_communications_support_to_a_wide_variety_of_u_s_government_customers_we_provide_cutting_edge_it_networking_and_services_design_execution_and_sustainment"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/sdvosb"
@@ -40,6 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
+                android:contentDescription="@string/sdvosb"
                 app:srcCompat="@drawable/sdvosb" />
 
             <View
@@ -53,18 +54,18 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:text="Our Mission"
+                android:text="@string/our_mission"
                 android:textColor="@android:color/black"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Since 2006, Intelligent Waves LLC has been providing information technology (IT) and communications support to a wide variety of U.S. government customers. Our boots on the ground experience—along with our technical expertise—enables us to identify, document, and develop mission-critical IT and communications solutions."
+                android:text="@string/since_2006_intelligent_waves_llc_has_been_providing_information_technology_it_and_communications_support_to_a_wide_variety_of_u_s_government_customers_our_boots_on_the_ground_experience_along_with_our_technical_expertise_enables_us_to_identify_document_and_develop_mission_critical_it_and_communications_solutions"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="30sp" />
+                android:textSize="25sp" />
 
             <ImageView
                 android:id="@+id/iw_star"
@@ -72,6 +73,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
+                android:contentDescription="@string/iw_star"
                 app:srcCompat="@drawable/ic_iwstar_100" />
 
 

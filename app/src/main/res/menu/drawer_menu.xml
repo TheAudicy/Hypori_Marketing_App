@@ -27,8 +27,8 @@
             android:title="@string/native_mobile_experience" />
         <item
             android:id="@+id/nav_system_requirements"
-            android:icon="@drawable/ic_system"
-            android:title="@string/system_requirements" />
+            android:icon="@drawable/ic_contact"
+            android:title="@string/contact_about_hypori" />
         <item
             android:id="@+id/nav_iw"
             android:icon="@drawable/ic_iwstar_100"

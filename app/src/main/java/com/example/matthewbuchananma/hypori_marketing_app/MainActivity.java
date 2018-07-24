@@ -41,9 +41,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    public void hyporiTrial(View view) {
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://selfregister.hypori.com/"));
-        startActivity(browserIntent);
+    public void hyporiTrialAndroid(View view) {
+        Intent marketIntent = new Intent(Intent.ACTION_VIEW);
+        marketIntent.setData(Uri.parse("market://details?id=com.intelligentwaves.client"));
+        try {
+            startActivity(marketIntent);
+        }
+        catch(Exception e){
+            marketIntent.setData(Uri.parse("https://play.google.com/store/apps/details?id=com.intelligentwaves.client&hl=en_US"));
+            startActivity(marketIntent);
+        }
+    }
+
+    public void hyporiTrialApple(View view) {
+        Intent marketIntent = new Intent(Intent.ACTION_VIEW);
+        marketIntent.setData(Uri.parse("https://itunes.apple.com/us/app/hypori-client/id1309884013?mt=8"));
+        startActivity(marketIntent);
     }
 
     @Override
