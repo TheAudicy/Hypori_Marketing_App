@@ -31,12 +31,24 @@
                 app:srcCompat="@drawable/hypori_logo" />
 
             <TextView
+                android:id="@+id/hypori_iw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/making_byod_a_reality"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
                 android:id="@+id/hypori_iw"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/hypori_by_intelligent_waves_represents_a_new_and_comprehensive_approach_to_enterprise_mobility_management_and_mobile_device_management_hypori_virtualizes_the_entire_mobile_experience_moving_everything_that_matters_into_a_managed_and_secure_environment"
+                android:text="@string/hypori_s_class_leading_virtual_mobile_infrastructure_platform_delivers_a_managed_and_secure_environment_to_power_your_critical_mobility_byod_program"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textSize="25sp" />
@@ -45,10 +57,9 @@
                 android:id="@+id/hypori_phone"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
-                android:layout_marginTop="10dp"
                 android:adjustViewBounds="true"
                 android:contentDescription="@string/phone_w_hypori"
-                app:srcCompat="@drawable/hypori_phone_tilted" />
+                app:srcCompat="@drawable/hypori" />
 
             <View
                 android:layout_width="match_parent"
@@ -62,89 +73,79 @@
                 android:fadingEdgeLength="2dp"
                 android:requiresFadingEdge="horizontal" />
 
-            <RelativeLayout
+            <TextView
+                android:id="@+id/info_tv_header1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/secure_and_compliant"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/lock"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="2dp"
-                    android:contentDescription="@string/lock"
-                    app:srcCompat="@drawable/ic_lock" />
+            <TextView
+                android:id="@+id/info_tv_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/virtualize_the_entire_mobile_experience_leaving_no_data_or_apps_at_rest_on_physical_mobile_endpoints_risks_associated_with_malware_reverse_engineering_and_theft_are_eliminated"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
 
-                <TextView
-                    android:id="@+id/info_tv_4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginStart="2dp"
-                    android:layout_toEndOf="@+id/lock"
-                    android:layout_toRightOf="@id/lock"
-                    android:text="@string/hypori_mitigates_the_risk_of_data_at_rest_from_both_mobile_android_and_ios_platforms"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+            <TextView
+                android:id="@+id/info_tv_header2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/managed_and_controlled"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/gear"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@id/info_tv_4"
-                    android:layout_marginTop="2dp"
-                    android:contentDescription="@string/gear"
-                    app:srcCompat="@drawable/ic_system" />
+            <TextView
+                android:id="@+id/managed_and_controlled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/provide_a_single_centralized_mobile_os_version_on_persistent_virtual_mobile_devices_simplify_the_development_deployment_testing_and_support_of_apps"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
 
-                <TextView
-                    android:id="@+id/managed_and_controlled"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/info_tv_4"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginStart="2dp"
-                    android:layout_toEndOf="@+id/lock"
-                    android:layout_toRightOf="@id/gear"
-                    android:text="@string/hypori_enables_secure_managed_access_to_controlled_enterprise_resources_via_byod_or_uncontrolled_commercial_devices_no_dot"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
+            <TextView
+                android:id="@+id/info_tv_header3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/adopted_and_embraced"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/star"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/managed_and_controlled"
-                    android:layout_marginTop="2dp"
-                    android:contentDescription="@string/star"
-                    app:srcCompat="@drawable/ic_star" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/managed_and_controlled"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginStart="2dp"
-                    android:layout_toEndOf="@+id/lock"
-                    android:layout_toRightOf="@+id/lock"
-                    android:text="@string/hypori_is_already_being_adopted_by_customers_such_as_the_department_of_homeland_security_and_the_u_s_special_operations_command"
-                    android:textColor="@android:color/black"
-                    android:textSize="20sp" />
-
-            </RelativeLayout>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/the_mobile_thin_client_provides_access_to_the_virtual_mobile_environment_without_an_intrusive_agent_drive_adoption_and_eliminate_liability_from_big_brother_policies_easily_onboard_contractors_with_mobile_access"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
 
             <View
                 android:layout_width="match_parent"

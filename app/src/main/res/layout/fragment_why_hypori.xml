@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/key_benefits_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#b41518"
+        android:padding="10dp"
+        android:text="@string/why_hypori"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/benefits_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/key_benefits_header">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/device_neutral_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/platform_agnostic"
+                android:textColor="#767782"
+                android:textSize="35sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/device_neutral_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/use_any_android_or_ios_end_user_device_to_access_enterprise_resources_leverage_any_app_that_runs_in_an_android_environment"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/device_neutral_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/hand_w_phone"
+                app:srcCompat="@drawable/platformagnostic" />
+
+            <TextView
+                android:id="@+id/secure_platform_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_control"
+                android:textColor="#767782"
+                android:textSize="35sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/only_solution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/establish_and_maintain_full_control_of_access_to_all_enterprise_resources_and_data_enforces_absolute_control_of_what_apps_are_allowed"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/total_security_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_security"
+                android:textColor="#767782"
+                android:textSize="35sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/agentless_description_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/eliminate_any_concerns_about_data_at_rest_on_the_mobile_device_it_never_resides_there_achieve_all_security_and_compliance_requirements_for_data_loss_prevention"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/plays_well_w_others_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plays_well_with_others"
+                android:textColor="#767782"
+                android:textSize="35sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/plays_well_w_others_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/provide_secure_communications_between_the_device_and_enterprise_resources_integrates_with_existing_mobile_device_management_and_directory_service_capabilities"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

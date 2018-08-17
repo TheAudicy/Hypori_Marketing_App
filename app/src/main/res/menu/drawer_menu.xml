@@ -17,7 +17,7 @@
         <item
             android:id="@+id/nav_benefits"
             android:icon="@drawable/ic_check"
-            android:title="@string/key_benefits" />
+            android:title="@string/why_hypori" />
         <item
             android:id="@+id/nav_enterprise"
             android:icon="@drawable/ic_enterprise"
@@ -29,7 +29,7 @@
         <item
             android:id="@+id/nav_system_requirements"
             android:icon="@drawable/ic_contact"
-            android:title="@string/contact_about_hypori" />
+            android:title="@string/contact_us" />
         <item
             android:id="@+id/nav_iw"
             android:icon="@drawable/ic_iwstar_100"

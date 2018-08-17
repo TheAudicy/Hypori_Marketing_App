@@ -2,18 +2,19 @@ package com.example.matthewbuchananma.hypori_marketing_app;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+
     private DrawerLayout drawer;
 
     @Override
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.setCheckedItem(R.id.nav_information);
         }
     }
+
 
     public void hyporiTrialAndroid(View view) {
         Intent marketIntent = new Intent(Intent.ACTION_VIEW);
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_benefits:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containter,
-                        new BenefitsFragment()).commit();
+                        new WhyHyporiFragment()).commit();
                 break;
             case R.id.nav_enterprise:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containter,
@@ -84,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_system_requirements:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containter,
-                        new SystemRequirementsFragment()).commit();
+                        new ContactFragment()).commit();
                 break;
             case R.id.nav_iw:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_containter,

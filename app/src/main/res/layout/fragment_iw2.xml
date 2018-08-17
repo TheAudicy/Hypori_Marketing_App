@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:contentDescription="@string/int_waves_logo_w_waves_black"
-        app:srcCompat="@drawable/iw_logo_black_with_waves" />
+        app:srcCompat="@drawable/iw_logo_black_with_waves_taller" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 android:id="@+id/iw_tv1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
                 android:text="@string/intelligent_waves_llc_is_a_service_disabled_veteran_owned_small_business_that_specializes_in_providing_information_technology_it_and_communications_support_to_a_wide_variety_of_u_s_government_customers_we_provide_cutting_edge_it_networking_and_services_design_execution_and_sustainment"
                 android:textAlignment="center"
@@ -36,8 +36,8 @@
 
             <ImageView
                 android:id="@+id/sdvosb"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
                 android:contentDescription="@string/sdvosb"
